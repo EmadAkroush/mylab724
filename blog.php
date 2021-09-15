@@ -83,90 +83,67 @@
 
                          <div class="row">
                           
-                               <div class="col-md-12 col">       
+                          <div class="col-md-12 col">       
 
                              
                           
-                                 <div data-aos="fade-down" data-aos-duration="5000">
-
-                                     <div class="event-blog-first">
-                                         <img src="assets/image/body/asam-3-metil-2-oxovalerat-1-1080x675-standard-scale-4_00x%20-%20Copy.jpg" class="blog-img">
-                                         <p class="categori-blog">
-                                             دسته بندی بیماری ها
-                                         </p>
-                                         <h3 class="onvan-blog-post"> <?php echo $_query->post_title ?> </h3>
-                                         <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
-                                         </p>
-                                         <div class="row">
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-write"> نویسنده نادر شاه افشاری </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-date"> date </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <button class="blog-botton"> ادامه مطلب </button>
-                                             </div>
-                                         </div>
-
-
-                                         <hr class="blog-hr">
-                                         <div class="row">
-                                             <div class="col-md-4 sharing-icon-blog">
-                                                 <div class="row">
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-icon">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                            
-                            
-                                </div>
-
-                           
-                      
-                            </div>
+                             
 
 
 
 
 
                          <div class="row">
-
+                         <?php 
+                $_arges = array(
+                    'post_per_page' => 4,
+                    'offset' =>0,
+                    'category' =>'',
+                    'category_name' => '',
+                    'orderby' => 'post_date',
+                    'order' => 'desc',
+                    'include' =>'',
+                    'exclude' =>'',
+                    'meta_key' =>'',
+                    'meta_value' =>'post',
+                    'post_type' => '',
+                    'post_name_type' => '',
+                    'post_parent' => '',
+                    'post_status' => 'publish',
+                    'suppress_filters' =>true,
+                );
+                $my_post=get_posts('$arges');
+          foreach($my_post as $post)
+          {
+                ?>
                              <div class="col-md-6">
                                  <div data-aos="fade-down" data-aos-duration="4000">
 
                                      <div class="event-blog">
-                                         <img src="assets/image/body/post09---slide_01.jpg" class="img-blog img-body-blog">
-                                         <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                         <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
+                                     <?php   the_post_thumbnail( 'medium', array('class' => 'img-blog' , 'img-body-blog')); ?>
+                                        
+                                         <p class="categori-blog"> <?php  the_category( ' ' ); ?>  </p>
+                                         <h3 class="onvan-blog-post"> <?php echo get_the_title();  ?>  </h3>
                                          <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                         <?php  the_excerpt();    ?>
                                          </p>
                                          <div class="row">
                                              <div class="col-md-4 col">
                                                  <p class="blog-write">
-                                                     نویسنده نادر افشاری
+                                                 <?php ?>
+
+
                                                  </p>
                                              </div>
                                              <div class="col-md-4 col">
-                                                 <p class="blog-date"> Date </p>
+                                                 <p class="blog-date"> 
+                                                <?php echo get_the_date();?>     
+                                                </p>
                                              </div>
                                              <div class="col-md-4 col">
+                                                 <a href="<?php the_permalink();  ?>" class="buttun_link_product">
                                                  <button class="blog-botton">ادامه مطلب </button>
+                                                 </a>
                                              </div>
                                              <div class="row">
                                                  <hr class="blog-hr">
@@ -204,390 +181,16 @@
                                      </div>
                                  </div>
                              </div>
-
-
-
-
-                             <div class="col-md-6">
-                                 <div data-aos="fade-down" data-aos-duration="4000">
-
-                                     <div class="event-blog">
-                                         <img src="assets/image/body/post10---slide_01.jpg" class="img-body-blog">
-                                         <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                         <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                         <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                                         </p>
-
-
-                                         <div class="row">
-
-
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-write">
-                                                     نویسنده نادر افشاری
-                                                 </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-date"> Date </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <button class="blog-botton">ادامه مطلب </button>
-                                             </div>
-                                             <div class="row">
-                                                 <hr class="blog-hr">
-                                             </div>
-
-                                             <div class="row">
-
-                                                 <div class="col-md-8 sharing-icon-blog">
-                                                     <div class="row">
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                             </div>
-
-
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-
-
-
+                             <?php } ?>
                          </div>
-
-                         <div class="row ">
-                             <div class="col-md-6">
-                                 <div data-aos="fade-down" data-aos-duration="4000">
-
-                                     <div class="event-blog">
-                                         <img src="assets/image/body/post11---slide_01.jpg" class="img-body-blog">
-                                         <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                         <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                         <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                                         </p>
-                                         <div class="row">
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-write">
-                                                     نویسنده نادر افشاری
-                                                 </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-date"> Date </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <button class="blog-botton">ادامه مطلب </button>
-                                             </div>
-                                             <div class="row">
-                                                 <hr class="blog-hr">
-                                             </div>
-
-                                             <div class="col-md-8 sharing-icon-blog">
-                                                 <div class="row">
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
-                                                     </div>
-                                                 </div>
-                                             </div>
-
-                                         </div>
-
-                                     </div>
-                                 </div>
-                             </div>
-
-
-
-
-                             <div class="col-md-6">
-                                 <div data-aos="fade-down" data-aos-duration="4000">
-
-                                     <div class="event-blog">
-                                         <img src="assets/image/body/post-12---slide_01.jpg" class="img-body-blog">
-                                         <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                         <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                         <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                                         </p>
-                                         <div class="row">
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-write">
-                                                     نویسنده نادر افشاری
-                                                 </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-date"> Date </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <button class="blog-botton">ادامه مطلب </button>
-                                             </div>
-                                             <div class="row">
-                                                 <hr class="blog-hr">
-                                             </div>
-
-                                             <div class="col-md-8 sharing-icon-blog">
-                                                 <div class="row">
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
-                                                     </div>
-
-
-
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
-                                                     </div>
-                                                 </div>
-                                             </div>
-
-
-
-                                         </div>
-
-                                     </div>
-
-
-                                 </div>
-                             </div>
-
+                          </div>
                          </div>
-                                <div class="row">
-
-                                 <div data-aos="fade-down" data-aos-duration="4000">
-
-                                     <div class="event-blog">
-                                         <img src="assets/image/body/post-13----slide_01.jpg" class="blog-img img-body-blog">
-                                         <p class="categori-blog">
-                                             دسته بندی بیماری ها
-                                         </p>
-                                         <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                         <p>
-                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
-                                         </p>
-                                         <div class="row">
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-write"> نویسنده نادر شاه افشاری </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <p class="blog-date"> date </p>
-                                             </div>
-                                             <div class="col-md-4 col">
-                                                 <button class="blog-botton"> ادامه مطلب </button>
-                                             </div>
-                                         </div>
+                     
 
 
-                                         <hr class="blog-hr">
-                                         <div class="row">
-                                             <div class="col-md-4 sharing-icon-blog">
-                                                 <div class="row">
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-icon">
-                                                     </div>
-                                                     <div class="col-md-3 col">
-                                                         <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-icon">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                     
-                             </div>
+                             
 
 
-
-
-
-                             <div class="row">
-                                 <div class="col-md-6">
-                                     <div data-aos="fade-down" data-aos-duration="4000">
-
-                                         <div class="event-blog">
-                                             <img src="assets/image/body/post-13----slide_01.jpg" class="img-body-blog">
-                                             <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                             <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                             <p>
-                                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                                             </p>
-                                             <div class="row">
-                                                 <div class="col-md-4 col">
-                                                     <p class="blog-write">
-                                                         نویسنده نادر افشاری
-                                                     </p>
-                                                 </div>
-                                                 <div class="col-md-4 col">
-                                                     <p class="blog-date"> Date </p>
-                                                 </div>
-                                                 <div class="col-md-4 col">
-                                                     <button class="blog-botton">ادامه مطلب </button>
-                                                 </div>
-                                                 <div class="row">
-                                                     <hr class="blog-hr">
-                                                 </div>
-                                                 <div class="col-md-8 sharing-icon-blog">
-                                                     <div class="row">
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
-                                                         </div>
-                                                     </div>
-                                                 </div>
-
-
-
-
-
-
-                                             </div>
-                                         </div>
-
-                                     </div>
-                                 </div>
-
-
-
-
-                                 <div class="col-md-6">
-                                     <div data-aos="fade-down" data-aos-duration="4000">
-
-                                         <div class="event-blog">
-                                             <img class="img-body-blog" src="assets/image/body/post15---slide_01.jpg">
-                                             <p class="categori-blog"> دسته بندی خوراک ها </p>
-                                             <h3 class="onvan-blog-post"> لورم اپیسوم متن </h3>
-                                             <p>
-                                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                                             </p>
-                                             <div class="row">
-                                                 <div class="col-md-4 col">
-                                                     <p class="blog-write">
-                                                         نویسنده نادر افشاری
-                                                     </p>
-                                                 </div>
-                                                 <div class="col-md-4 col">
-                                                     <p class="blog-date"> Date </p>
-                                                 </div>
-                                                 <div class="col-md-4 col">
-                                                     <botton class="blog-botton">ادامه مطلب </botton>
-                                                 </div>
-                                                 <div class="row">
-                                                     <hr class="blog-hr">
-                                                 </div>
-
-
-                                                 <div class="col-md-8 sharing-icon-blog">
-                                                     <div class="row">
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
-                                                         </div>
-
-
-
-                                                         <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
-                                                         </div>
-                                                     </div>
-                                                 </div>
-
-
-
-
-
-
-
-                                             </div>
-
-                                         </div>
-
-                                     </div>
-
-                                 </div>
 
                                  <div class="row">
                                      <div class="col-md-3  col-6 ddddd">

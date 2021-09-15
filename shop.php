@@ -83,10 +83,24 @@
                         <div data-aos="fade-left" data-aos-duration="4000">
 
                             <div class="row-shop-tab">
-                                <div class="shop-6">
+                            <?php
+                                   $args = array(
+                                    'post_type' => 'product',
+                                    'p'         => 62 , // ID of a page, post, or custom type
+                                    'posts_per_page' => 5,
+                                    
 
+                                  );
+                                  $my_posts = new WP_Query($args);
+                                  if ($my_posts->have_posts()) : 
+                                    while ($my_posts->have_posts()) :
+                                        $my_posts->the_post(); 
+                                      ?>
+                                <div class="shop-6">
+                                 
                                 
-                                    <img src="assets/image/body/pscking-3mahe.jpg" class="according-img">
+                                    
+                                    <?php   the_post_thumbnail( 'medium', array('class' => 'according-img')); ?>
                                     <div class="grid-thumbani-shop">
                                         <div class="pscking">
                                             <img src="assets/image/body/pscking.jpg" class="col-img">
@@ -100,13 +114,15 @@
                                     </div>
                                 </div>
                          <div class="shop-moshakhasat shop-6">
+
+                      
                                     
 
                                     <p class="shop-according-top">محصولات مشخصات کیت تشخیص </p>
                                     <div class="grid-top">
                                         <div class="div-a">
                                             <span>
-                                                <h3 class="shop-according-top-h3"> پکیج 3 ماه تشخیص </h3>
+                                                <h3 class="shop-according-top-h3"> <?php the_title(); ?> </h3>
                                             </span>
                                         </div>
                                         <div class="div-b">
@@ -116,11 +132,11 @@
 
                                     <p class="stare-shop"> امتیاز </p>
                                     <div class="according-price">
-                                        <p class="according-price-p"> قیمت 500,000 </p>
+                                        <p class="according-price-p"> <?php echo $product->get_price_html(); ?> </p>
                                     </div>
                                     <h3 class="according-shop-onvan"> مشخصات کلی </h3>
                                     <p class="describe-product">
-                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                                    <?php echo get_the_excerpt();  ?>
                                     </p>
                                     <ul class="shop-ul">
                                         <li class="a">شماره یک </li>
@@ -145,6 +161,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <?php
+                                    endwhile;
+                                   ?>
+                                  <?php else:  ?>
+         <?php _e( 'No Products' ); ?>
+    <?php endif; ?>
+
                                 </div>
                             </div>
                         </div>
@@ -214,7 +237,4 @@
         <?php get_footer(); ?>
 
 
-        fgfdgfdgdfg
-        fghfhdfdfsd
-        dfgdfgdfghgjh
-        hjghj
+       

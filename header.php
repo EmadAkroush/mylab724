@@ -21,6 +21,7 @@
                 <div class="logo-img-menu"> </div>
                 <div class="logo-icon1"> <img src="<?php bloginfo('template_url')?>/assets/image/menu/resize2.svg"> </div>
                 <div class="logo-icon2"> <img src="<?php bloginfo('template_url')?>/assets/image/menu/resize1.svg"> </div>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -81,8 +82,13 @@
                         <li class=" nav-item item-menu-image">
                             <img class="nav-img" src="<?php bloginfo('template_url')?>/assets/image/menu/22)%20Icons-Line-Cart.svg">
                             <a class="nav-link nav-text-ca" href="#"> سبد خرید </a>
+                            
+                            
+                            <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
 
+                            
                         </li>
+            
 
                     </ul>
 
