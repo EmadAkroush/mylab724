@@ -430,14 +430,13 @@
             <div class="col-md-4  col-svg">
                 <div data-aos="zoom-out-left" data-aos-duration="2000">
 
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                   
                     <lottie-player class="body-svg-img" src="https://assets8.lottiefiles.com/private_files/lf30_eukxp6uj.json" background="transparent" speed="1" loop autoplay></lottie-player>
                     <p class="col-svg-p"> نمونه گیری </p>
                 </div>
             </div>
             <div class="col-md-4 col-svg">
                 <div data-aos="zoom-out-left" data-aos-duration="3000">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player class="body-svg-img" src="https://assets8.lottiefiles.com/private_files/lf30_ual7d1w6.json" background="transparent" speed="1" loop autoplay></lottie-player>
                     <p class="col-svg-p"> اسکن نوار </p>
                 </div>
@@ -445,7 +444,6 @@
             <div class="col-md-4 col-svg">
                 <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player class="body-svg-img" src="https://assets8.lottiefiles.com/private_files/lf30_mtza3gce.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
                     <p class="col-svg-p"> نتیجه تست </p>
                 </div>

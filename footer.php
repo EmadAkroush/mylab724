@@ -1,4 +1,6 @@
-    <script defer src="<?php bloginfo('template_url')?>/assets/FontAwesome.Pro.5.15.2.Web/js/all.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+   <script defer src="<?php bloginfo('template_url')?>/assets/FontAwesome.Pro.5.15.2.Web/js/all.js"></script>
     <script src="<?php bloginfo('template_url')?>/assets/jquery-3.6.0.min.js"> </script>
     <script src="<?php bloginfo('template_url')?>/assets/custom.js"></script>
     <script src="<?php bloginfo('template_url')?>/assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"> </script>

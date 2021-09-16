@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-    <div class="" id="main-content">
+<div class="" id="main-content">
         <div class="row first-row-amozesh">
             <div class="background-header-azmayesh">
             </div>
@@ -14,6 +14,7 @@
                             <div class="inside-amozesh-middle">
                                 <h2 class="h2-header-azmayesh"> لورم اپیسوم متن ساختگی </h2>
                                 <p class="p-header-azmayesh"> شما را با تکنولوژی هوش مصنوعی به آینده می بریم </p>
+
 
 
                                 <div class="" onclick="scrollupamozesh()">
@@ -87,19 +88,41 @@
                             </video>
                         </div>
                     </div>
+                    <?php
+                                   $args = array(
+                                    'p'         => 84 , // ID of a page, post, or custom type
+                                    'posts_per_page' => 5,
+                                    
 
+                                  );
+                                  $my_posts = new WP_Query($args);
+                                  if ($my_posts->have_posts()) : 
+                                    while ($my_posts->have_posts()) :
+                                        $my_posts->the_post(); 
+                                      ?>
+                                      
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
                             <img src="assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
                             <p class="p-moshkelat-koliyavi"> مشکلات کلیوی </p>
-                            <h3> مشکلات کلیوی </h3>
-                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را </p>
+                            <h3>  <?php the_title(); ?> </h3>
+                            <p>  <?php echo get_the_excerpt();  ?> </p>
+                            <a href="<?php the_permalink();  ?>" class="buttun_link_product">
                             <button class="botton-azmayesh">
+                               
                                 ادامه مطلب
                             </button>
+                            </a>
                         </div>
                     </div>
+
+                    <?php
+                                    endwhile;
+                                   ?>
+                                  <?php else:  ?>
+         <?php _e( 'No Products' ); ?>
+    <?php endif; ?>
 
                 </div>
             </div>
@@ -116,19 +139,41 @@
         <div class="row">
             <div class="col-md-10 div-azmayesh-colyavi">
                 <div class="row">
+                <?php
+                                   $args = array(
+                                    'p'         => 84 , // ID of a page, post, or custom type
+                                    'posts_per_page' => 5,
+                                    
+
+                                  );
+                                  $my_posts = new WP_Query($args);
+                                  if ($my_posts->have_posts()) : 
+                                    while ($my_posts->have_posts()) :
+                                        $my_posts->the_post(); 
+                                      ?>
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-left" data-aos-duration="4000">
 
                             <img src="assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
                             <p class="p-moshkelat-koliyavi"> مشکلات کلیوی </p>
-                            <h3> مشکلات کلیوی </h3>
-                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را </p>
+                            <h3> <?php the_title(); ?> </h3>
+                            <p> <?php echo get_the_excerpt();  ?> </p>
+                            <a href="<?php the_permalink();  ?>" class="buttun_link_product">
+
                             <button class="botton-azmayesh">
                                 ادامه مطلب
                             </button>
+
+                            </a>
+
                         </div>
                     </div>
-
+                    <?php
+                                    endwhile;
+                                   ?>
+                                  <?php else:  ?>
+         <?php _e( 'No Products' ); ?>
+    <?php endif; ?>
 
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
@@ -169,15 +214,17 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div data-aos="zoom-out-left" data-aos-duration="5000">
->
-                                        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_eukxp6uj.json" background="transparent" speed="1" class="img-botton-azmayesh" loop  autoplay></lottie-player>
+                             
+
+                                        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_eukxp6uj.json" background="transparent" speed="1" class="img-botton-azmayesh" loop autoplay></lottie-player>
                                         <p class="p-icons-botton-azmayesh"> نمونه گیری </p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                                        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ual7d1w6.json" background="transparent" speed="1" class="img-botton-azmayesh" loop autoplay></lottie-player>
+                                         <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ual7d1w6.json" background="transparent" speed="1" class="img-botton-azmayesh" loop autoplay></lottie-player>
+                                         
                                         <p class="p-icons-botton-azmayesh"> اسکن نوار </p>
                                     </div>
                                 </div>
@@ -190,7 +237,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div data-aos="zoom-out-left" data-aos-duration="2000">
-                                      
+
                                         <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_cszr3odk.json" background="transparent" speed="1" class="img-botton-azmayesh" loop autoplay></lottie-player>
 
                                         <p class="p-icons-botton-azmayesh"> خرید بسته نوار </p>
@@ -204,13 +251,15 @@
             </div>
         </div>
 
-        
+
+    </div>
+    <div class="row">
+        <div class="col-md-10 div-up">
+            <div onclick="scrollup()"><i class="fas fa-angle-up up "></i></div>
         </div>
-             <div class="row">
-            <div class="col-md-10 div-up">
-                <div onclick="scrollup()"><i class="fas fa-angle-up up "></i></div>
-            </div>
-        </div>
+    </div>
+
+
 
 
 
