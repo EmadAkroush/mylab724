@@ -27,7 +27,7 @@
 
             <div class="row ">
                 <div class="col-md-12 div-logo-footer">
-                    <img src="assets/image/footer/mylab%20logo33.png" class="logo-footer">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/image/footer/mylab%20logo33.png" class="logo-footer">
                 </div>
             </div>
             <div class="grid-footer">
@@ -52,13 +52,13 @@
                     <h6 class="footer-h6 footer-center"> مارا در شبکه های اجتماعی دنبال کنید </h6>
                     <div class="div-img-footer">
                         <div class="colfooter">
-                            <img src="assets/image/footer/Layer%20-1.svg" class="img-footer">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/footer/Layer%20-1.svg" class="img-footer">
                         </div>
                         <div class="colfooter">
-                            <img src="assets/image/footer/Layer%20-2.svg" class="img-footer">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/footer/Layer%20-2.svg" class="img-footer">
                         </div>
                         <div class="colfooter">
-                            <img src="assets/image/footer/Layer%202.svg" class="img-footer">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/footer/Layer%202.svg" class="img-footer">
                         </div>
                     </div>
                 </div>
@@ -84,11 +84,12 @@
 
 
             </div>
-            <div class="footer-hr">
-
-            </div>
+            
         </div>
     </div>
+    <div class="footer-hr col-md-10">
+
+            </div>
     <div class="row div-footer-bottom">
         <div class="col-md-2 bottom-of-footer">
             <p> Copyritghts 2021 </p>

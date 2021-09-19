@@ -1554,3 +1554,7 @@ hr.body-hr {
     	border-radius: 50%;
     	padding: 1px;  
 }
+.footer-hr{
+    display: block;
+    margin: 0 auto;
+}

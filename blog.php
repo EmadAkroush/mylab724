@@ -15,36 +15,15 @@
                                  <div class="row box-shadow-blog">
                                      <p class="side-menu-p"> دسته بندی مطالب وبلاگ </p>
                                      <nav class="navigation">
-                                         <ul class="mainmenu">
-                                             <li><a href="">لورم اپیسوم متن</a>
-                                                 <ul class="submenu">
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="">لورم اپیسوم متن</a>
-                                                 <ul class="submenu">
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="">لورم اپیسوم متن</a>
-                                                 <ul class="submenu">
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="">لورم اپیسوم متن</a>
-                                                 <ul class="submenu">
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                     <li><a href="">لورم اپیسوم متن</a></li>
-                                                 </ul>
-                                             </li>
-                                         </ul>
+                                     <ul class="mainmenu">
+                                         <?php 
+                                         $categories = get_categories();
+                                         foreach($categories as $category) {
+                                            echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                                         }
+                                         ?>
+                                     </ul>
+                                       
                                      </nav>
                                  </div>
 
@@ -84,9 +63,11 @@
 
                                      <div class="row inside-side-menu">
                                          <img src="assets/image/body/post-19--slide_01.jpg" class="img-bottom-blog-side">
-                                         <p class="onvan-maghale"> عنوان مقاله </p>
-                                         <p class="blog-date">date</p>
+                                         <p class="onvan-maghale"> <?php echo get_the_title();  ?> </p>
+                                         <p class="blog-date"> <?php echo get_the_date();?> </p>
+                                         <a href="<?php the_permalink();  ?>" class="buttun_link_product">
                                          <button class="blog-botton">ادامه مطلب </button>
+                                         </a>
                                      </div>
                                      <?php } ?>
                                  </div>
@@ -169,25 +150,25 @@
                                                  <div class="col-md-8 sharing-icon-blog">
                                                      <div class="row">
                                                          <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
+                                                             <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(1).svg" class="blog-sharing-icon">
                                                          </div>
 
 
 
                                                          <div class="col-md-3 col ">
-                                                             <img src="assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
+                                                             <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(2).svg" class="blog-sharing-icon">
                                                          </div>
 
 
 
                                                          <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
+                                                             <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(3).svg" class="blog-sharing-icon">
                                                          </div>
 
 
 
                                                          <div class="col-md-3 col">
-                                                             <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
+                                                             <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(4).svg" class="blog-sharing-icon">
                                                          </div>
                                                      </div>
                                                  </div>
@@ -238,14 +219,7 @@
                                      </div>
 
                                      <div class="col-md-8 col">
-                                         <div class="main">
-
-                                             <!-- Actual search box -->
-                                             <div class="form-group has-search">
-                                                 <span class="fa fa-search form-control-feedback"></span>
-                                                 <input type="text" class="form-control" placeholder="Search">
-                                             </div>
-                                         </div>
+                                     <?php get_search_form( ); ?>
                                      </div>
 
                                  </div>
@@ -287,7 +261,7 @@
                                              <div data-aos="zoom-out-left" data-aos-duration="5000">
                                                  <?php   the_post_thumbnail( 'medium', array('class' => 'img-bottom-blog')); ?>
                                                  <p class="onvan-maghale"> <?php echo get_the_title();  ?> </p>
-                                                 <p class="blog-date">date</p>
+                                                 <p class="blog-date"> <?php echo get_the_date();?> </p>
                                                  <a href="<?php the_permalink();  ?>" class="buttun_link_product">
 
                                                  <button class="blog-botton">ادامه مطلب </button>
@@ -309,16 +283,11 @@
                                      <div class="col-md-6 col">
 
 
-                                         <div class="">
-                                             <div class="main">
+                                        
+                                            
 
-                                                 <!-- Actual search box -->
-                                                 <div class="form-group has-search">
-                                                     <span class="fa fa-search form-control-feedback"></span>
-                                                     <input type="text" class="form-control" placeholder="Search">
-                                                 </div>
-                                             </div>
-                                         </div>
+                                             <?php get_search_form( ); ?>
+                                      
 
 
                                      </div>
@@ -328,10 +297,10 @@
                                                  <img src="" class="blog-icon-bottom">
                                              </div>
                                              <div class="col-md-4 col">
-                                                 <img src="assets/image/body/blog-icon1%20(3).svg" class="blog-icon-bottom">
+                                                 <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(3).svg" class="blog-icon-bottom">
                                              </div>
                                              <div class="col-md-4 col">
-                                                 <img src="assets/image/body/blog-icon1%20(4).svg" class="blog-icon-bottom">
+                                                 <img src="<?php bloginfo('template_url'); ?>/assets/image/body/blog-icon1%20(4).svg" class="blog-icon-bottom">
                                              </div>
                                          </div>
                                      </div>

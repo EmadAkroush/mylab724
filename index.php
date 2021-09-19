@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 colmobile  ">
                 <div data-aos="zoom-out-right" data-aos-duration="2000">
-                    <img class="img-header" src="assets/image/header/slider-2.png">
+                    <img class="img-header" src="<?php bloginfo('template_url'); ?>/assets/image/header/slider-2.png">
                 </div>
             </div>
 
@@ -17,9 +17,9 @@
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد،
                         </p>
                     </div>
-                    <img class="header-play-store" src="assets/image/header/Layer%20-1.svg">
-                    <img class="header-play-store" src="assets/image/header/Layer%20-2.svg">
-                    <img class="header-play-store" src="assets/image/header/Layer%20-3.svg">
+                    <img class="header-play-store" src="<?php bloginfo('template_url'); ?>/assets/image/header/Layer%20-1.svg">
+                    <img class="header-play-store" src="<?php bloginfo('template_url'); ?>/assets/image/header/Layer%20-2.svg">
+                    <img class="header-play-store" src="<?php bloginfo('template_url'); ?>/assets/image/header/Layer%20-3.svg">
                 </div>
                 <div class="header-nav playe-store">
 
@@ -28,7 +28,7 @@
 
             <div class="col-md-6 col-sm-12 coldesktop ">
                 <div data-aos="zoom-out-right" data-aos-duration="2000">
-                    <img class="img-header" src="assets/image/header/slider-2.png">
+                    <img class="img-header" src="<?php bloginfo('template_url'); ?>/assets/image/header/slider-2.png">
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                 <div class="body-hr"></div>
             </div>
             <div class="col">
-                <img class="img-top-body" src="assets/image/body/download.png">
+                <img class="img-top-body" src="<?php bloginfo('template_url'); ?>/assets/image/body/download.png">
                 <h2 class="test-home"> براحتی توی خونه تست بده </h2>
             </div>
             <div class="col">
@@ -59,7 +59,7 @@
 
                     <div class="inside-product">
 
-                        <img class="product-body" src="assets/image/body/pscking-1mahe.jpg">
+                        <img class="product-body" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-1mahe.jpg">
 
 
                         <button class="button-product"> ...بیشتر </button>
@@ -69,7 +69,7 @@
                             <p class="text-of-product-hover"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، </p>
                         </div>
 
-                        <img class="product-body-hover" src="assets/image/body/pscking-3mahe.jpg">
+                        <img class="product-body-hover" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-3mahe.jpg">
 
 
                         <div class="bottom-of-the-product-hover">
@@ -93,7 +93,7 @@
 
                     <div class="inside-product">
 
-                        <img class="product-body" src="assets/image/body/pscking-3mahe.jpg">
+                        <img class="product-body" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-3mahe.jpg">
 
 
                         <button class="button-product"> ...بیشتر </button>
@@ -103,7 +103,7 @@
                             <p class="text-of-product-hover"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، </p>
                         </div>
 
-                        <img class="product-body-hover" src="assets/image/body/pscking-3mahe.jpg">
+                        <img class="product-body-hover" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-3mahe.jpg">
 
 
                         <div class="bottom-of-the-product-hover">
@@ -118,7 +118,7 @@
                 <div data-aos="zoom-out-left" data-aos-duration="2000">
 
                     <div class="inside-product">
-                        <img class="product-body" src="assets/image/body/pscking-6mahe.jpg">
+                        <img class="product-body" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-6mahe.jpg">
 
 
                         <button class="button-product"> ...بیشتر </button>
@@ -126,7 +126,7 @@
                             <h5 class="title-of-product-hover"> کیت تشخیص </h5>
                             <p class="text-of-product-hover"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، </p>
                         </div>
-                        <img class="product-body-hover" src="assets/image/body/pscking-3mahe.jpg">
+                        <img class="product-body-hover" src="<?php bloginfo('template_url'); ?>/assets/image/body/pscking-3mahe.jpg">
 
 
                         <div class="bottom-of-the-product-hover">
@@ -156,7 +156,7 @@
 
                 <div class="row dive-box-mobile">
                     <div class="col-img-box-mobile">
-                        <img class="img-box-mobile" src="assets/image/body/uti-2.jpg">
+                        <img class="img-box-mobile" src="<?php bloginfo('template_url'); ?>/assets/image/body/uti-2.jpg">
                     </div>
 
                     <h2 class="mobile-title-box"> تست و آزمایش ادرار در منزل </h2>
@@ -172,7 +172,7 @@
 
                 <div class="row dive-box-mobile">
                     <div class="col-img-box-mobile">
-                        <img class="img-box-mobile" src="assets/image/body/elder-at-home-2.jpg">
+                        <img class="img-box-mobile" src="<?php bloginfo('template_url'); ?>/assets/image/body/elder-at-home-2.jpg">
                     </div>
 
                     <h2 class="mobile-title-box"> تست آزمایش ادرار در منزل </h2>
@@ -188,7 +188,7 @@
 
                 <div class="row dive-box-mobile">
                     <div class="col-img-box-mobile">
-                        <img class="img-box-mobile" src="assets/image/body/elder-at-home-2.jpg">
+                        <img class="img-box-mobile" src="<?php bloginfo('template_url'); ?>/assets/image/body/elder-at-home-2.jpg">
                     </div>
 
                     <h2 class="mobile-title-box"> تست و آزمایش ادرار در منزل </h2>
@@ -204,7 +204,7 @@
 
                 <div class="row dive-box-mobile">
                     <div class="col-img-box-mobile">
-                        <img class="img-box-mobile" src="assets/image/body/elder-at-home-2.jpg">
+                        <img class="img-box-mobile" src="<?php bloginfo('template_url'); ?>/assets/image/body/elder-at-home-2.jpg">
                     </div>
 
                     <h2 class="mobile-title-box"> تست آزمایش ادرار در منزل </h2>
@@ -239,7 +239,7 @@
                     <div class="div-boxes-img">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <img class="img-boxes1 img-box" src="assets/image/body/elder-at-home-2.jpg">
+                            <img class="img-boxes1 img-box" src="<?php bloginfo('template_url'); ?>/assets/image/body/elder-at-home-2.jpg">
                         </div>
                     </div>
                 </div>
@@ -247,7 +247,7 @@
                     <div class="div-boxes-img">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <img class="img-boxes2 img-box" src="assets/image/body/uti-2.jpg">
+                            <img class="img-boxes2 img-box" src="<?php bloginfo('template_url'); ?>/assets/image/body/uti-2.jpg">
                         </div>
                     </div>
                     <div class="div-boxes-text">
@@ -292,7 +292,7 @@
                     <div class="div-boxes-img">
                         <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                            <img class="img-boxes3 img-box" onclick="myfuntiona(2)" src="assets/image/body/uti-1.jpg">
+                            <img class="img-boxes3 img-box" onclick="myfuntiona(2)" src="<?php bloginfo('template_url'); ?>/assets/image/body/uti-1.jpg">
                         </div>
                     </div>
                 </div>
@@ -300,7 +300,7 @@
                     <div class="div-boxes-img">
                         <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                            <img class="img-boxes4 img-box" onclick="myfuntiona(3)" src="assets/image/body/uti-.jpg">
+                            <img class="img-boxes4 img-box" onclick="myfuntiona(3)" src="<?php bloginfo('template_url'); ?>/assets/image/body/uti-.jpg">
                         </div>
                     </div>
                     <div class="div-boxes-text">
@@ -354,23 +354,39 @@
 
             <div class="col-md-6 col-sm-6 div-text-koliavi-m">
                 <div data-aos="zoom-out-left" data-aos-duration="4000">
+                <?php
+                                   $args = array(
+                                    'p'         => 84 , // ID of a page, post, or custom type
+                                    'posts_per_page' => 5,
+                                    
 
-                    <img src="assets/image/body/koliye.svg" class="img-koliavi">
-                    <h1 class="text-koliavi"> مشکلات کلیوی </h1>
+                                  );
+                                  $my_posts = new WP_Query($args);
+                                  if ($my_posts->have_posts()) : 
+                                    while ($my_posts->have_posts()) :
+                                        $my_posts->the_post(); 
+                                      ?>
+             
+                    <img src="<?php bloginfo('template_url'); ?>/assets/image/body/koliye.svg" class="img-koliavi">
+                    <h1 class="text-koliavi"> <?php echo get_the_title();  ?> </h1>
                     <div class="div-text-koliavi">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                        گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
-                        و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                        می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه
-                        و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-                        الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
-                        توان امید داشت و شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
-                        .دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+                    <?php echo get_the_excerpt();  ?>
+                    <a href="<?php the_permalink();  ?>" class="buttun_link_product">
                         <button class="div-text-koliavi-button"> اطلاعات بیشتر </button>
+                     </a>
                     </div>
-                </div>
-            </div>
+                    <?php
+                                    endwhile;
+                                   ?>
+                                  <?php else:  ?>
+         <?php _e( 'No Products' ); ?>
+    <?php endif; ?>
 
+                </div>
+                
+            </div>
+  
+          
         </div>
 
 
@@ -387,16 +403,16 @@
 
                     <div class="row icon-body">
                         <div class="col-md-4  icon-body-inside">
-                            <img class="icon-body-inside-img" src="assets/image/body/Group%2078.svg">
+                            <img class="icon-body-inside-img" src="<?php bloginfo('template_url'); ?>/assets/image/body/Group%2078.svg">
                             <h2 class="icon-body-hr"> پایش </h2>
                         </div>
                         <div class="col-md-4 icon-body-inside">
-                            <img class="icon-body-inside-img" src="assets/image/body/Group%2079.svg">
+                            <img class="icon-body-inside-img" src="<?php bloginfo('template_url'); ?>/assets/image/body/Group%2079.svg">
                             <h2 class="icon-body-hr"> آگاهی </h2>
                         </div>
 
                         <div class="col-md-4   icon-body-inside">
-                            <img class="icon-body-inside-img" src="assets/image/body/Group%2080.svg">
+                            <img class="icon-body-inside-img" src="<?php bloginfo('template_url'); ?>/assets/image/body/Group%2080.svg">
                             <h2 class="icon-body-hr"> پیشگیری </h2>
                         </div>
                     </div>
@@ -407,7 +423,7 @@
             <div class="col-md-4 div-pishgiry-inside">
                 <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                    <img class="img-body-pishgiry" src="assets/image/body/kidney-1.jpg">
+                    <img class="img-body-pishgiry" src="<?php bloginfo('template_url'); ?>/assets/image/body/kidney-1.jpg">
                 </div>
             </div>
 
@@ -464,7 +480,7 @@
                     <div class="col-md-2 div-comment-img">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <img src="assets/image/body/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg" class="img-comment">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/body/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg" class="img-comment">
                         </div>
                     </div>
                     <div class="col-md-10 div-comment-inside">

@@ -10,7 +10,7 @@
 
                             <div class="col-md-6 div-img-aboute-us-mobile">
 
-                                <img src="assets/image/body/12785_24544_Thumbnail.png" class="img-up-aboute-us">
+                                <img src="<?php bloginfo('template_url')?>/assets/image/body/12785_24544_Thumbnail.png" class="img-up-aboute-us">
 
                             </div>
 
@@ -27,7 +27,7 @@
                             <div class="col-md-6 div-img-aboute-us-desktop">
                                 <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                                    <img src="assets/image/body/park.png" class="img-up-aboute-us">
+                                    <img src="<?php bloginfo('template_url')?>/assets/image/body/park.png" class="img-up-aboute-us">
                                 </div>
                             </div>
                             <div class="row div-text-aboute-us">
@@ -84,17 +84,17 @@
                                     <div class="row row-sotioal-icon">
 
                                         <div class="col-md-3 col-sm-6">
-                                            <img src="assets/image/body/aparat.svg" class="about-us-content-img">
+                                            <img src="<?php bloginfo('template_url')?>/assets/image/body/aparat.svg" class="about-us-content-img">
                                         </div>
                                         <div class="col-md-3 col-sm-6">
-                                            <img src="assets/image/body/Layer%20-2.svg" class="about-us-content-img">
+                                            <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%20-2.svg" class="about-us-content-img">
                                         </div>
 
                                         <div class="col-md-3 col-sm-6">
-                                            <img src="assets/image/body/Layer%202.svg" class="about-us-content-img">
+                                            <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%202.svg" class="about-us-content-img">
                                         </div>
                                         <div class="col-md-3 col-sm-6">
-                                            <img src="assets/image/body/Layer%20-1.svg" class="about-us-content-img">
+                                            <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%20-1.svg" class="about-us-content-img">
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                                 <p> info@mylab724.com </p>
                                             </div>
                                             <div class="col-md-2   col-inside-list">
-                                                <img src="assets/image/body/Layer%20-4.svg" class="contact-icon-aboute-us-img">
+                                                <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%20-4.svg" class="contact-icon-aboute-us-img">
                                             </div>
                                         </div>
 
@@ -145,7 +145,7 @@
                                                 <p> 0513222222 </p>
                                             </div>
                                             <div class="col-md-2 col-inside-list">
-                                                <img src="assets/image/body/Layer%20-5.svg" class="contact-icon-aboute-us-img">
+                                                <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%20-5.svg" class="contact-icon-aboute-us-img">
                                             </div>
                                         </div>
 
@@ -162,7 +162,7 @@
                                                 <p> 0513222222 </p>
                                             </div>
                                             <div class="col-md-2 col-inside-list">
-                                                <img src="assets/image/body/Layer%20-6.svg" class="contact-icon-aboute-us-img">
+                                                <img src="<?php bloginfo('template_url')?>/assets/image/body/Layer%20-6.svg" class="contact-icon-aboute-us-img">
                                             </div>
 
                                         </div>
@@ -177,7 +177,7 @@
                                 <div data-aos="zoom-out-left" data-aos-duration="4000">
 
                                     <div class="event">
-                                        <img src="assets/image/body/map.jpg" class="map-img">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d803.7028497449662!2d59.562733839130665!3d36.31688016880258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6c92209088ccd3%3A0xf9f4236a1a4776dc!2sPost%20Bank!5e0!3m2!1sen!2s!4v1632042549767!5m2!1sen!2s" class="map-img" allowfullscreen="" loading="lazy"></iframe>
                                         <div class="row map-row">
                                             <h3> دفتر مرکزی </h3>
                                             <p> ایــــران - خراســــان رضوی - مشهد - بلوار خیام - ساختمان پست بانک - پارک فناوری اطلاعات و ارتباطات - طبقه 6

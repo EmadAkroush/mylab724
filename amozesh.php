@@ -26,7 +26,7 @@
                     <div class="col-md-6 ">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <img src="assets/image/header/sliderbig.png" class="slider-azmayesh">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/header/sliderbig.png" class="slider-azmayesh">
                         </div>
                     </div>
 
@@ -50,9 +50,9 @@
             <div class="col-md-10 col-sm-10 col div-azmayesh-video">
                 <h2> لورم اپیسوم متن ساختگی </h2>
                 <div data-aos="zoom-in-up" data-aos-duration="4000">
-                    <video id="video-azmayesh" class="video-js vjs-big-play-centered" controls preload="auto" poster="assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
-                        <source src="assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
-                        <source src="MY_VIDEO.webm" type="video/webm" />
+                    <video id="video-azmayesh" class="video-js vjs-big-play-centered" controls preload="auto" poster="<?php bloginfo('template_url')?>/assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
+                        <source src="<?php bloginfo('template_url')?>/assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
+                        <source src="<?php bloginfo('template_url')?>/MY_VIDEO.webm" type="video/webm" />
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and consider upgrading to a
                             web browser that
@@ -77,9 +77,9 @@
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" poster="assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
-                                <source src="assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
-                                <source src="MY_VIDEO.webm" type="video/webm" />
+                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" poster="<?php bloginfo('template_url')?>/assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
+                                <source src="<?php bloginfo('template_url')?>/assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
+                                <source src="<?php bloginfo('template_url')?>/MY_VIDEO.webm" type="video/webm" />
                                 <p class="vjs-no-js">
                                     To view this video please enable JavaScript, and consider upgrading to a
                                     web browser that
@@ -104,7 +104,7 @@
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <img src="assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
                             <p class="p-moshkelat-koliyavi"> مشکلات کلیوی </p>
                             <h3>  <?php the_title(); ?> </h3>
                             <p>  <?php echo get_the_excerpt();  ?> </p>
@@ -154,7 +154,7 @@
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-left" data-aos-duration="4000">
 
-                            <img src="assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/image/body/koliye.svg" class="icon-koliyavi-azmayesh">
                             <p class="p-moshkelat-koliyavi"> مشکلات کلیوی </p>
                             <h3> <?php the_title(); ?> </h3>
                             <p> <?php echo get_the_excerpt();  ?> </p>
@@ -178,9 +178,9 @@
                     <div class="col-md-6 col">
                         <div data-aos="zoom-out-right" data-aos-duration="4000">
 
-                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" poster="assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
-                                <source src="assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
-                                <source src="MY_VIDEO.webm" type="video/webm" />
+                            <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" poster="<?php bloginfo('template_url')?>/assets/image/body/lab.jpg" data-setup="{}" border-radius="25px 25px 0px 0px">
+                                <source src="<?php bloginfo('template_url')?>/assets/video/labmovie.mp4" type="video/mp4" type="video/mp4" />
+                                <source src="<?php bloginfo('template_url')?>/MY_VIDEO.webm" type="video/webm" />
                                 <p class="vjs-no-js">
                                     To view this video please enable JavaScript, and consider upgrading to a
                                     web browser that

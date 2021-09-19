@@ -50,7 +50,7 @@
 
                             <div class="col-md-6 col moshakhasat-div">
 
-                                <img src="assets/image/body/shop-icon-2.svg" class="moshakhasat-img">
+                                <img src="<?php bloginfo('template_url')?>/assets/image/body/shop-icon-2.svg" class="moshakhasat-img">
                                 <p> مشخصات </p>
 
                             </div>
@@ -59,7 +59,7 @@
 
                             <div class="col-md-6 col moshakhasat-div">
 
-                                <img src="assets/image/body/shop-icon-1.svg" class="moshakhasat-img">
+                                <img src="<?php bloginfo('template_url')?>/assets/image/body/shop-icon-1.svg" class="moshakhasat-img">
                                 <p> دیدگاه کاربران </p>
                             </div>
 
@@ -145,7 +145,9 @@
                                     </ul>
                                     <div class="row grid-buttons-shop">
                                         <div class="col-md-4 woo">
+                                            <a href="http://localhost:8080/wordpress/but/?add-to-cart=62">
                                             <div class="add-to-cart"> افزودن به سبد خرید </div>
+                                            </a>
                                         </div>
                                         <div class="col-md-4 woo">
                                             <div class="icon-shop"><img src="assets/image/body/22)%20Icons-Line-Cart.svg"> </div>
